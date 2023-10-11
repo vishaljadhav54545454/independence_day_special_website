@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" "></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Independece Day Special</title>
+    <style>
+         *{
+            margin: 0%;
+            padding: 0%;
+         }
+        .container{
+            display: flex;
+           
+            background:linear-gradient(
+                to top,
+                orange,
+                white,
+                green
+            ) ;
+            color: white;
+            height: 6vw;
+  
+        }
+        .container1{
+            display: flex;
+            animation: animate 1s infinite alternate;
+            background:linear-gradient(
+                to left,
+                orange,
+                white,
+                green
+            ) ;
+            color: white;
+            height: 6vw;
+  
+        }
+        .container1>h1{
+            position: absolute;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto ;
+            margin-bottom: 25vw;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto ;
+        }
+        .gridimg{
+            align-items: center;
+            height: 6vw;
+            width: 6vw;
+        }
+        .gridimg>img{
+            height: 6vw;
+            width: 6vw;
+            border-radius: 50px;
+            
+        }
+        .gridcontainer{
+            text-align: center;
+            align-items: center;
+            margin-left: 1.5vw;
+            color: black;
+
+
+        }
+        h6{
+            font-size: 1vw;
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: 100px auto;
+            align-items: center;
+            height: 6vw;
+            background:linear-gradient(
+                to top,
+            black,
+            blue
+            ) ;
+           
+
+        }
+        @media screen and (max-width:600px) {
+            .navgrid>h1{
+                font-size: 1.5vw;
+            }
+        }
+        .mainmave{
+            height: 6vw;
+            width: 100%;
+            background:linear-gradient(
+             to top,
+            orange,
+            white,
+            green
+            ) ;
+        }
+        h1{
+            line-height: 6vw;
+            font-size: 3vw;
+            align-items: center;
+        }
+ 
+        .section{
+              display: grid;
+              text-align: center;
+              background: url('/img/bgimg.jpg');
+              backdrop-filter: blur(3px);
+              background-repeat: no-repeat;
+              background-size: 100% 100vh;
+              height: 47vw;
+        
+        }
+        .section>p{
+            font-size: 4vw;
+            font-weight: bold;
+            padding: 0px 10px 0px 10px;
+            margin-top: 4vw;
+            color: white;
+        }
+         *{
+               margin: 0%;
+               padding:0%;
+           }
+        body{
+               background-color: black;
+        }
+        .flag-contianer{
+               position: relative;
+               margin-top: 200px; 
+               transform: translate(-50%, -50%);
+               width: 100%;
+               text-align: center;
+               margin-left: 235px;
+
+           
+        }
+
+    
+        @media screen and (max-width:1434px) {
+           
+                         .flag.element{
+                            background-size: 500px 100%;
+                         }
+                         .name>div>h1{
+                            font-size: 30px;
+                            margin-top: 10px;
+                         }
+        
+        }
+        @media screen and (max-width:1374px) {
+            
+                         .flag.element{
+                            background-size: 500px 100%;
+                         }
+                         .name>div>h1{
+                            font-size: 30px;
+                            margin-top: 100px;
+                         }
+               
+                          .container>h1{
+                              font-size: 20px;
+                          }
+        }
+        @media screen and (max-width:1252px) {
+    
+                    
+                         .flag.element{
+                            background-size: 500px 100%;
+                         }
+        }
+        @media screen and (max-width:600px) {
+    
+             .flag-contianer{
+                margin-left: 200px;
+             }       
+              .flag.element{
+               background-size: 200px 100%;
+            }
+            .name>h1{
+          margin-top: 20vw;
+      }
+}
+@media screen and (max-width:450px) {
+    
+    .flag-contianer{
+       margin-left: 200px;
+    }       
+     .flag.element{
+      background-size: 200px 100%;
+   }
+   .name>h1{
+          margin-top: 30vw;
+   }
+}
+        .flag{
+            margin-top: 0px;
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            margin-left: auto;
+           
+        }
+        .flag-element{
+            position: relative;
+            background: url('/img/flag.jpg');
+            background-repeat: no-repeat;
+            background-size: 400px 100%;
+            width: 1px;
+            height: 90%;
+            display: inline-block;
+            animation:wave 1s ease-in-out infinite alternate;
+    
+        }
+
+        @keyframes wave{
+            0%{
+                top: 5%;
+            }
+            100%{
+                top: -5%;
+            }
+        }
+        .section>img{        
+              width: 30vw;
+              height: 30vw;
+              margin-left: 38%;
+              text-align: center;
+              margin-bottom: 100px;
+            
+        }
+        
+        .section2{
+             text-align: center;
+             align-items: center;
+             padding-left: auto;
+             padding-right:auto;
+        }
+        .background-clip{
+           /* position: fixed; */
+           right: 0;
+           bottom: 0;
+           width: 100%; 
+           min-height: 100%;
+           text-align: center;
+         }
+         .name{
+             display: grid;
+             color: white;
+             text-align: center;
+             font-size: 1vw;
+            
+         }
+         
+         .name{
+             position: absolute;
+             margin-top: 30vw;
+             margin-left: 100px;
+             margin-right: 100px;
+             text-align: center;
+            
+       
+         }
+         .name>h1{
+            font-size: 4vw;
+            color: black;
+         }
+         .toolbar{
+            display: flex;
+            height: 100px;
+            background:linear-gradient(
+             to top,
+            black,
+            blue
+            ) ;
+            animation: animate 1s infinite alternate;
+           align-items: center;
+         }
+       
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div  class="navgridimg"><img style="width: 6vw; height: 6vw;" src="/img/smartpeacylogo.png" alt="error"></div>
+        <div class="navgrid">
+            <h1><font style="color: orange;">Happy</font> <font style="color: white;">Independence</font> <font style="color: green;">Day</font> </h1>
+        </div>
+      
+     </nav>
+      <nav class="mainmave">
+        <marquee class="container1" behavior="" direction="left">
+         <h1>स्वातंत्र्य वीरांना करुया शत शत प्रणाम, त्यांच्या निस्वार्थ त्यागानेच भारत बनला महान... स्वातंत्र्य दिनाच्या हार्दिक शुभेच्छा</h1>
+        </marquee>
+      </nav>
+
+     <section class="section2">
+            <div class="background-imagg">
+                            <div class="name">
+                                 <h1>Happy Independence Day रंग, रूप, वेश, भाषा <br> जरी अनेक आहेत,
+                                     तरी सारे भारतीय एक आहेत… <br>
+                                     🇮🇳🇮🇳 77 व्या स्वातंत्र्य दिनाच्या हार्दिक शुभेच्छा ! 🇮🇳🇮🇳
+                                 </h1>
+                            </div>
+                
+                         <div class="flag-contianer">
+                               <div class="flag">
+            
+                               </div>
+                         </div>
+                                 <script>
+                                  var a = $('.flag').width();
+                                  for(var i = 0; i < a; i++){
+                                      var flagElement = $("<div class='flag-element'>");
+                                          flagElement.css('background-position', -i + "px");
+                                          flagElement.css('animation-delay', i * 10 + 'ms');
+                                          $('.flag').append(flagElement);
+                                  } 
+                                </script>
+                    
+        
+                     <video style="width: 100%;" class="bacground-clip"autoplay loop muted>
+                           <source  src="/img/bg1video.mp4" type="video/mp4">
+                           <source src="movie.ogg" type="video/ogg">
+                           Your browser does not support the video tag.
+                    </video>
+             </div>
+        
+        </section>
+     <marquee class="container" behavior="" direction="right">
+
+        <div class="main">
+    
+            <div class="grid">
+           
+               <div class="gridcontainer">
+                  <p>Trainning Head <br><b>Mr.Vishnu Shinde</b> </p>
+               </div>
+               <div class="gridimg">
+                <img src="/img/vishnu sir.png" alt="">
+            </div>
+            </div>
+    
+            <div class="grid">
+              
+               <div class="gridcontainer">
+                <p>It Expert <br> <b>Mr.Dishant Arke</b> </p>
+               </div>
+               <div class="gridimg">
+                <img src="/img/dishant sir.png" alt="">
+                </div>
+            </div>
+    
+            <div class="grid">
+            
+               <div class="gridcontainer">
+                <p>It Expert <br> <b>Mr.Sagar Jadhav</b> </p>
+               </div>
+               <div class="gridimg">
+                <img src="/img/sagar sir.png" alt="">
+                </div>
+            </div>
+    
+            <div class="grid">
+           
+           <div class="gridcontainer">
+            <p>R & D Department <br> <b>Mr.Aditya Gawali</b> </p>
+           </div>
+           <div class="gridimg">
+            <img src="/img/aditya sir.png" alt="">
+            </div>
+        </div>
+    
+           <div class="grid">
+       
+              <div class="gridcontainer">
+               <p>Branch Manager <br> <b>Mr.Rushikesh Jadhav</b> </p>
+             </div>
+             <div class="gridimg">
+                <img style="padding-left:8  px;" src="/img/rushi sir.png" alt="">
+                </div>
+        </div>
+    
+         </div>
+        </marquee>
+     <section class="section">
+     
+         <p> गूंज रहा है दुनिया में हिंदुस्तान का नारा, चमक रहा है आसमान में तिरंगा हमारा</p>
+         <img src="/img/smartpeacylogo.png" alt="">
+    
+    </section>
+
+        <marquee class="cont" behavior="" direction="left">
+            <div class="toolbar">
+            <div><img style="border-radius: 50%; width: 70px; height: 70px;" src="/img/vishal.jpg" alt=""></div>
+            <div><h1>Create By : Vishal Ambadas Jadhav</h1></div>
+        </div>
+         </marquee>
+
+    
+
+   
+</body>
+</html>
+
+
+
+
+
+
